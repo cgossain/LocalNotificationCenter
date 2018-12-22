@@ -1,5 +1,5 @@
 //
-//  MFTLocalNotificationCenter.swift
+//  LocalNotificationCenter.swift
 //  Pods
 //
 //  Created by Christian Gossain on 2016-08-26.
@@ -8,11 +8,11 @@
 
 import Foundation
 
-private let MFTLocalNotificationCenterNotificationKey = "MFTLocalNotificationCenterNotificationKey"
+private let LocalNotificationCenterNotificationKey = "MFTLocalNotificationCenterNotificationKey"
 
-open class MFTLocalNotificationCenter: NSObject {
+open class LocalNotificationCenter: NSObject {
     
-    open static let `default` = MFTLocalNotificationCenter()
+    open static let `default` = LocalNotificationCenter()
     
     /// All local notifications that have been scheduled through the notification center.
     open var scheduledLocalNotificationsByKey: [String : UILocalNotification] {
@@ -29,7 +29,7 @@ open class MFTLocalNotificationCenter: NSObject {
     fileprivate func loadScheduledLocalNotifications() {
         if let scheduledLocalNotifications = UIApplication.shared.scheduledLocalNotifications {
             for notification in scheduledLocalNotifications {
-                if let key = notification.userInfo?[MFTLocalNotificationCenterNotificationKey] as? String {
+                if let key = notification.userInfo?[LocalNotificationCenterNotificationKey] as? String {
                     // this notification was scheduled by us, so let's track it
                     mutableScheduledLocalNotificationsByKey[key] = notification
                 }
@@ -68,7 +68,7 @@ open class MFTLocalNotificationCenter: NSObject {
         }
         
         // store the key in the notification user info and add additional user keys
-        var notificationUserInfo: [String : AnyObject] = [MFTLocalNotificationCenterNotificationKey : key as AnyObject]
+        var notificationUserInfo: [String : AnyObject] = [LocalNotificationCenterNotificationKey : key as AnyObject]
         if let userInfo = userInfo {
             for (key, value) in userInfo {
                 notificationUserInfo[key] = value
