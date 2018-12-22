@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'LocalNotificationCenter_Example' do
+  pod 'LocalNotificationCenter', :path => '../'
+
+  target 'LocalNotificationCenter_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
