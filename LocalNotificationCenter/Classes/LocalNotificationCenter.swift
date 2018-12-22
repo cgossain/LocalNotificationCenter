@@ -8,11 +8,13 @@
 
 import Foundation
 
-private let LocalNotificationCenterNotificationKey = "MFTLocalNotificationCenterNotificationKey"
-
 open class LocalNotificationCenter: NSObject {
+    private struct UserInfoKeys {
+        static let notificationKey = "LocalNotificationCenterNotificationKey"
+    }
     
-    open static let `default` = LocalNotificationCenter()
+    /// The default notification center instance.
+    public static let `default` = LocalNotificationCenter()
     
     /// All local notifications that have been scheduled through the notification center.
     open var scheduledLocalNotificationsByKey: [String : UILocalNotification] {
@@ -68,7 +70,7 @@ open class LocalNotificationCenter: NSObject {
         }
         
         // store the key in the notification user info and add additional user keys
-        var notificationUserInfo: [String : AnyObject] = [LocalNotificationCenterNotificationKey : key as AnyObject]
+        var notificationUserInfo: [String : AnyObject] = [LocalNotificationCenter.UserInfoKeys.notificationKey : key as AnyObject]
         if let userInfo = userInfo {
             for (key, value) in userInfo {
                 notificationUserInfo[key] = value
