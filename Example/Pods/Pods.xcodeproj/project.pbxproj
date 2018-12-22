@@ -8,15 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		583F01B2C6612B35FAFCA6B3C0CBE09E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
+		5CBFC8EDB80AA5DC6AB9AD29ADEE5A4C /* LocalNotificationCenter-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A92329CA9995889FC8AFE5F5D8391152 /* LocalNotificationCenter-dummy.m */; };
 		712F8403F1560874B125451D3DE53277 /* Pods-LocalNotificationCenter_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D0221D54386E3B4EA7F3AC22BF96F2CF /* Pods-LocalNotificationCenter_Tests-dummy.m */; };
 		92A27CD751E6D187CE65D2A369318B85 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
 		A41854AE7B5BCE4894FF5A21B812DDDC /* Pods-LocalNotificationCenter_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F1804832A5383A15C7945218AE7E31B8 /* Pods-LocalNotificationCenter_Example-dummy.m */; };
-		A7F004E0196D1B52405C1A3DAC1FE4DB /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C61B442063D18CD3BB947E479CED88 /* ReplaceMe.swift */; };
 		BEE2ECF7DBBA5CE752899BCFF7731369 /* Pods-LocalNotificationCenter_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A29F3B8CA9517D830DC9FA3C23D2C05 /* Pods-LocalNotificationCenter_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E18DD9DA3A6681FB8FD10309D3EAC09D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
+		E3079DBB08A5FF7F5AB41C3337FB77BD /* LocalNotificationCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37974D629E701C748AB9F4AE6A2967CD /* LocalNotificationCenter.swift */; };
 		E7CB3F24D50EE1D35D2BCAFAC0B1B5D6 /* Pods-LocalNotificationCenter_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 36E390335C178D074E4137F3EFB6D9D6 /* Pods-LocalNotificationCenter_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F3913CB64943A520F076223F3D186165 /* LocalNotificationCenter-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D847E88DAE11F6D75372A6654C596A3 /* LocalNotificationCenter-dummy.m */; };
-		F49E797AB419A430A798E710303BADD8 /* LocalNotificationCenter-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DBD9417E1A3FB202763678E2BB4AD9D4 /* LocalNotificationCenter-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F49E797AB419A430A798E710303BADD8 /* LocalNotificationCenter-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EA26E572622DB09CF84D5AB101AD8626 /* LocalNotificationCenter-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,40 +38,40 @@
 
 /* Begin PBXFileReference section */
 		0F3E30A2A54513E0568FE4F7132949B4 /* Pods-LocalNotificationCenter_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LocalNotificationCenter_Example-frameworks.sh"; sourceTree = "<group>"; };
-		17C4661515BF41548D49363F12E276A0 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
 		22286119A62B06ED954D9959282D93AF /* Pods-LocalNotificationCenter_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-LocalNotificationCenter_Example.modulemap"; sourceTree = "<group>"; };
+		2AB9B4067AD195793FBA2CF521A7B512 /* LocalNotificationCenter.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LocalNotificationCenter.xcconfig; sourceTree = "<group>"; };
 		36E390335C178D074E4137F3EFB6D9D6 /* Pods-LocalNotificationCenter_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-LocalNotificationCenter_Tests-umbrella.h"; sourceTree = "<group>"; };
+		37974D629E701C748AB9F4AE6A2967CD /* LocalNotificationCenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LocalNotificationCenter.swift; path = LocalNotificationCenter/Classes/LocalNotificationCenter.swift; sourceTree = "<group>"; };
 		3E6A7B67B248EE855B4CE308B819047C /* Pods-LocalNotificationCenter_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LocalNotificationCenter_Example.release.xcconfig"; sourceTree = "<group>"; };
-		461A98FCA2DDE4619E8E70EB6528E036 /* LocalNotificationCenter.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; path = LocalNotificationCenter.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		4F4A038F57774FDA90AD008833297979 /* LocalNotificationCenter-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LocalNotificationCenter-prefix.pch"; sourceTree = "<group>"; };
-		50C61B442063D18CD3BB947E479CED88 /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReplaceMe.swift; path = LocalNotificationCenter/Classes/ReplaceMe.swift; sourceTree = "<group>"; };
 		50CF7E0EE12E876D532AA56166767078 /* Pods-LocalNotificationCenter_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LocalNotificationCenter_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		5C3E0A0C2A58A7C923D44BBC9EE75347 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5C45A0F0C15D8A79D746BC3A4242B572 /* Pods-LocalNotificationCenter_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LocalNotificationCenter_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		5D847E88DAE11F6D75372A6654C596A3 /* LocalNotificationCenter-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "LocalNotificationCenter-dummy.m"; sourceTree = "<group>"; };
-		62C8F20988D7976F013C56B56AC33CC9 /* Pods_LocalNotificationCenter_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_LocalNotificationCenter_Tests.framework; path = "Pods-LocalNotificationCenter_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D362B077403F0BEE8DBF68A9825EF9E /* LocalNotificationCenter.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = LocalNotificationCenter.modulemap; sourceTree = "<group>"; };
+		62C8F20988D7976F013C56B56AC33CC9 /* Pods_LocalNotificationCenter_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LocalNotificationCenter_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		650EBC44A4C4A7AB471FDBED0D638E08 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		65C9B500636A446CB04E4B937EF3E6C4 /* Pods-LocalNotificationCenter_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LocalNotificationCenter_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		6636B399514CDC1527AD63B30F0FC253 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6EDC06B7433B717B31CE9D40014317B8 /* Pods-LocalNotificationCenter_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LocalNotificationCenter_Tests-resources.sh"; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		99229D44503BE5A312591A36FD6A0846 /* Pods-LocalNotificationCenter_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LocalNotificationCenter_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		9A29F3B8CA9517D830DC9FA3C23D2C05 /* Pods-LocalNotificationCenter_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-LocalNotificationCenter_Example-umbrella.h"; sourceTree = "<group>"; };
-		9F03F7838E52BB3FCEE981201C1294C0 /* Pods_LocalNotificationCenter_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_LocalNotificationCenter_Example.framework; path = "Pods-LocalNotificationCenter_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F03F7838E52BB3FCEE981201C1294C0 /* Pods_LocalNotificationCenter_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LocalNotificationCenter_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A63EA556253DCDD57AC3B4340D2869B4 /* Pods-LocalNotificationCenter_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-LocalNotificationCenter_Tests.modulemap"; sourceTree = "<group>"; };
 		A75E67073C2A03F3ECBDE69AB1A757C8 /* Pods-LocalNotificationCenter_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LocalNotificationCenter_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		A92329CA9995889FC8AFE5F5D8391152 /* LocalNotificationCenter-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "LocalNotificationCenter-dummy.m"; sourceTree = "<group>"; };
+		AA636D310D43D51BEE5E5AD20540A004 /* LocalNotificationCenter.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; path = LocalNotificationCenter.podspec; sourceTree = "<group>"; };
 		AAB811BA6A60C83DB4DE498077F27118 /* Pods-LocalNotificationCenter_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LocalNotificationCenter_Example-resources.sh"; sourceTree = "<group>"; };
 		B067FA18ADBE00322101886D7CDE6424 /* Pods-LocalNotificationCenter_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LocalNotificationCenter_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		B5404C4DED7CD141B13CE2C859DEE228 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
 		C805A62690CFADA8EE517545B0977D9E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CF70158FA507AC6A9A819F55BBC760B0 /* Pods-LocalNotificationCenter_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LocalNotificationCenter_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		D0221D54386E3B4EA7F3AC22BF96F2CF /* Pods-LocalNotificationCenter_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LocalNotificationCenter_Tests-dummy.m"; sourceTree = "<group>"; };
 		D090BA5AF1FAE9C6EBE8C0CC97D193E5 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D1F0719E5EA69919AC55783E01BF1EE3 /* LocalNotificationCenter.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LocalNotificationCenter.xcconfig; sourceTree = "<group>"; };
+		D222B5898D2C243607F9F56739546415 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		D27EE3574AD604E81A89B51EDF19EB9F /* Pods-LocalNotificationCenter_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LocalNotificationCenter_Tests-frameworks.sh"; sourceTree = "<group>"; };
-		D782FB89881A8CBED69CBA6B3A2CB53F /* LocalNotificationCenter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = LocalNotificationCenter.framework; path = LocalNotificationCenter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		DBD9417E1A3FB202763678E2BB4AD9D4 /* LocalNotificationCenter-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LocalNotificationCenter-umbrella.h"; sourceTree = "<group>"; };
-		E98F1BE0EEB597E4A77D411B60859B70 /* LocalNotificationCenter.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = LocalNotificationCenter.modulemap; sourceTree = "<group>"; };
+		D782FB89881A8CBED69CBA6B3A2CB53F /* LocalNotificationCenter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LocalNotificationCenter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA26E572622DB09CF84D5AB101AD8626 /* LocalNotificationCenter-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LocalNotificationCenter-umbrella.h"; sourceTree = "<group>"; };
 		F1804832A5383A15C7945218AE7E31B8 /* Pods-LocalNotificationCenter_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LocalNotificationCenter_Example-dummy.m"; sourceTree = "<group>"; };
+		FE6B64F09236B0B0BCDB0B29B36CA07C /* LocalNotificationCenter-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LocalNotificationCenter-prefix.pch"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,15 +120,18 @@
 			path = "Target Support Files/Pods-LocalNotificationCenter_Example";
 			sourceTree = "<group>";
 		};
-		4A49F5F11C5AB0D825934DFE374460F8 /* LocalNotificationCenter */ = {
+		302883B99D7F2E2670A44E94A0517FF7 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				50C61B442063D18CD3BB947E479CED88 /* ReplaceMe.swift */,
-				7476811D95A052FFD923064F3CF31A61 /* Pod */,
-				FF1D9B06E200845AA6687540B6A66081 /* Support Files */,
+				6636B399514CDC1527AD63B30F0FC253 /* Info.plist */,
+				5D362B077403F0BEE8DBF68A9825EF9E /* LocalNotificationCenter.modulemap */,
+				2AB9B4067AD195793FBA2CF521A7B512 /* LocalNotificationCenter.xcconfig */,
+				A92329CA9995889FC8AFE5F5D8391152 /* LocalNotificationCenter-dummy.m */,
+				FE6B64F09236B0B0BCDB0B29B36CA07C /* LocalNotificationCenter-prefix.pch */,
+				EA26E572622DB09CF84D5AB101AD8626 /* LocalNotificationCenter-umbrella.h */,
 			);
-			name = LocalNotificationCenter;
-			path = ../..;
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/LocalNotificationCenter";
 			sourceTree = "<group>";
 		};
 		5E0D919E635D23B70123790B8308F8EF /* iOS */ = {
@@ -139,12 +142,23 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		7476811D95A052FFD923064F3CF31A61 /* Pod */ = {
+		5F69686E909A022ECD0A3618BBC40D9E /* LocalNotificationCenter */ = {
 			isa = PBXGroup;
 			children = (
-				B5404C4DED7CD141B13CE2C859DEE228 /* LICENSE */,
-				461A98FCA2DDE4619E8E70EB6528E036 /* LocalNotificationCenter.podspec */,
-				17C4661515BF41548D49363F12E276A0 /* README.md */,
+				37974D629E701C748AB9F4AE6A2967CD /* LocalNotificationCenter.swift */,
+				7A190B6D9135DD2EB2245ED2A8AA2851 /* Pod */,
+				302883B99D7F2E2670A44E94A0517FF7 /* Support Files */,
+			);
+			name = LocalNotificationCenter;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		7A190B6D9135DD2EB2245ED2A8AA2851 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				D222B5898D2C243607F9F56739546415 /* LICENSE */,
+				AA636D310D43D51BEE5E5AD20540A004 /* LocalNotificationCenter.podspec */,
+				650EBC44A4C4A7AB471FDBED0D638E08 /* README.md */,
 			);
 			name = Pod;
 			sourceTree = "<group>";
@@ -181,7 +195,7 @@
 		8FBBA56B91EF28333758FDC2EF5AB67B /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				4A49F5F11C5AB0D825934DFE374460F8 /* LocalNotificationCenter */,
+				5F69686E909A022ECD0A3618BBC40D9E /* LocalNotificationCenter */,
 			);
 			name = "Development Pods";
 			sourceTree = "<group>";
@@ -211,20 +225,6 @@
 				7AC59E1371701EC8D1B07FDD2CB7E4E9 /* Pods-LocalNotificationCenter_Tests */,
 			);
 			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		FF1D9B06E200845AA6687540B6A66081 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				5C3E0A0C2A58A7C923D44BBC9EE75347 /* Info.plist */,
-				E98F1BE0EEB597E4A77D411B60859B70 /* LocalNotificationCenter.modulemap */,
-				D1F0719E5EA69919AC55783E01BF1EE3 /* LocalNotificationCenter.xcconfig */,
-				5D847E88DAE11F6D75372A6654C596A3 /* LocalNotificationCenter-dummy.m */,
-				4F4A038F57774FDA90AD008833297979 /* LocalNotificationCenter-prefix.pch */,
-				DBD9417E1A3FB202763678E2BB4AD9D4 /* LocalNotificationCenter-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/LocalNotificationCenter";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -279,7 +279,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A117B178E6A0CF35332000758F711F82 /* Build configuration list for PBXNativeTarget "LocalNotificationCenter" */;
 			buildPhases = (
-				50518214F090E9AF5BFC0C5878AF5FDF /* Sources */,
+				F0F59255820E7338FCB0C509981B6134 /* Sources */,
 				CDFB639078806DDEA3452AA4EC652E8C /* Frameworks */,
 				9F9B451DF8F3474684B1D932CBCB31B7 /* Headers */,
 			);
@@ -339,20 +339,20 @@
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		50518214F090E9AF5BFC0C5878AF5FDF /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				F3913CB64943A520F076223F3D186165 /* LocalNotificationCenter-dummy.m in Sources */,
-				A7F004E0196D1B52405C1A3DAC1FE4DB /* ReplaceMe.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		7691F461FBA86C025E9DA55C25D05FB9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				712F8403F1560874B125451D3DE53277 /* Pods-LocalNotificationCenter_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F0F59255820E7338FCB0C509981B6134 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5CBFC8EDB80AA5DC6AB9AD29ADEE5A4C /* LocalNotificationCenter-dummy.m in Sources */,
+				E3079DBB08A5FF7F5AB41C3337FB77BD /* LocalNotificationCenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -452,7 +452,7 @@
 		};
 		36324E0791D1482F3C557E2D6F0FFDCB /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D1F0719E5EA69919AC55783E01BF1EE3 /* LocalNotificationCenter.xcconfig */;
+			baseConfigurationReference = 2AB9B4067AD195793FBA2CF521A7B512 /* LocalNotificationCenter.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -617,7 +617,7 @@
 		};
 		AE6AB8C1D6CDB37702C3EB862E0E462C /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D1F0719E5EA69919AC55783E01BF1EE3 /* LocalNotificationCenter.xcconfig */;
+			baseConfigurationReference = 2AB9B4067AD195793FBA2CF521A7B512 /* LocalNotificationCenter.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
