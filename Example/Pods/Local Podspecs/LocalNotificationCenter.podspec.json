@@ -1,8 +1,8 @@
 {
   "name": "LocalNotificationCenter",
-  "version": "0.1.0",
-  "summary": "A short description of LocalNotificationCenter.",
-  "description": "TODO: Add long description of the pod here.",
+  "version": "1.0.0",
+  "summary": "A lightweight library for scheduling local notifications on iOS.",
+  "description": "A lightweight library for scheduling local notifications on iOS.",
   "homepage": "https://github.com/cgossain/LocalNotificationCenter",
   "license": {
     "type": "MIT",
@@ -13,10 +13,10 @@
   },
   "source": {
     "git": "https://github.com/cgossain/LocalNotificationCenter.git",
-    "tag": "0.1.0"
+    "tag": "1.0.0"
   },
   "platforms": {
-    "ios": "8.0"
+    "ios": "10.3"
   },
   "source_files": "LocalNotificationCenter/Classes/**/*"
 }
