@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import UserNotifications
 
 open class LocalNotificationCenter: NSObject {
     private struct UserInfoKeys {

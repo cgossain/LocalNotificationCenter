@@ -14,4 +14,5 @@ A lightweight library for scheduling local notifications on iOS.
   s.ios.deployment_target = '10.3'
 
   s.source_files = 'LocalNotificationCenter/Classes/**/*'
+  s.framework    = 'UserNotifications'
 end
