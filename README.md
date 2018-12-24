@@ -20,6 +20,16 @@ it, simply add the following line to your Podfile:
 pod 'LocalNotificationCenter'
 ```
 
+## Usage Instructions
+
+LocalNotificationCenter is a lightweight wrapper around the UserNotifications
+framework, and can be used to easily schedule and manage local notifications on
+iOS. It also maintains its own context, and therefore manages only the local
+notifications scheduled by itself.
+
+
+
+
 ## Author
 
 cgossain, cgossain@gmail.com
