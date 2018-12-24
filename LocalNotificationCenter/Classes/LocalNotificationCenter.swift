@@ -47,6 +47,10 @@ public class LocalNotificationCenter {
     
     
     // MARK: - Lifecycle
+    /// Initializes the notification center with the given context.
+    ///
+    /// - parameters:
+    ///     - context: A unique context for the notification center. The notification ceneter is limited to manage notifications within this context only.
     init(context: String) {
         self.context = context
         loadScheduledLocalNotifications()
@@ -101,12 +105,19 @@ public class LocalNotificationCenter {
         }
     }
     
-    /// Returns true if a local notification is scheduled for the given key.
+    /// Returns a Boolean that indicates if there is a local notification scheduled in the receivers context for the given identifier.
+    ///
+    /// - parameters:
+    ///     - identifier: The unique identifier a previously scheduled notification.
     public func isLocalNotificationScheduled(forIdentifier identifier: String) -> Bool {
         return mutablePendingNotificationRequestsByIdentifier[identifier] != nil
     }
     
-    /// Cancels the local notification associated with the given key if it is scheduled.
+    /// Cancels the local notification associated with the given identifer in the receivers context.
+    ///
+    /// - Note: If there is no notification associated with the given identifier, the method does nothing.
+    /// - parameters:
+    ///     - identifier: The unique identifier a previously scheduled notification.
     public func cancelScheduledLocalNotification(forIdentifier identifier: String) {
         // ignore if we did not schedule a notification for this identifier
         if !isLocalNotificationScheduled(forIdentifier: identifier) {
@@ -120,7 +131,7 @@ public class LocalNotificationCenter {
         mutablePendingNotificationRequestsByIdentifier[identifier] = nil
     }
     
-    /// Cancels all scheduled local notifications.
+    /// Cancels all scheduled local notificationsin the receivers context.
     public func cancelAllScheduledLocalNotifications() {
         // gather all identifiers scheduled by us
         let identifiersToRemove = Array(mutablePendingNotificationRequestsByIdentifier.keys)
