@@ -9,15 +9,17 @@
 import Foundation
 import UserNotifications
 
-/// The LocalNotificationCenter is a light wrapper around the UserNotifications center framework, and only keeps
-/// track of only local notifications scheduled by itself.
-public class LocalNotificationCenter: NSObject {
+public class LocalNotificationCenter {
     private struct UserInfoKeys {
-        static let notificationIdentifier = "LocalNotificationCenterNotificationKey"
+        static let notificationContext = "com.localnotificationcenter.userinfokeys.context"
+        static let notificationIdentifier = "com.localnotificationcenter.userinfokeys.identifier"
     }
     
     /// The default notification center instance.
-    public static let `default` = LocalNotificationCenter()
+    public static let `default` = LocalNotificationCenter(context: "com.localnotificationcenter.context.default")
+    
+    /// The context of the receiver.
+    public let context: String
     
     /// A list of all notification requests (managed by the receiver) that are scheduled and waiting to be delivered.
     public var pendingNotificationRequestsByIdentifier: [String : UNNotificationRequest] {
@@ -29,8 +31,8 @@ public class LocalNotificationCenter: NSObject {
     
     
     // MARK: - Lifecycle
-    override init() {
-        super.init()
+    init(context: String) {
+        self.context = context
         loadScheduledLocalNotifications()
     }
     
@@ -46,14 +48,17 @@ public class LocalNotificationCenter: NSObject {
                                           body: String,
                                           dateMatching dateComponents: DateComponents,
                                           repeats: Bool,
-                                          userInfo: [String : AnyObject]?) {
+                                          userInfo: [String : AnyObject]? = nil) {
         // ignore if the notification is already scheduled
         if isLocalNotificationScheduled(forIdentifier: identifier) {
             return
         }
         
-        // add the given user info to the notification content user info
-        var notificationContentUserInfo: [AnyHashable : Any] = [LocalNotificationCenter.UserInfoKeys.notificationIdentifier : identifier]
+        // create the base user info
+        var notificationContentUserInfo: [AnyHashable : Any] = [LocalNotificationCenter.UserInfoKeys.notificationContext : self.context,
+                                                                LocalNotificationCenter.UserInfoKeys.notificationIdentifier : identifier]
+        
+        // append any additional externally provided user info
         userInfo?.forEach({ notificationContentUserInfo[$0.key] = $0.value })
         
         // create the local notification content
@@ -102,7 +107,7 @@ public class LocalNotificationCenter: NSObject {
     /// Cancels all scheduled local notifications.
     public func cancelAllScheduledLocalNotifications() {
         // gather all identifiers scheduled by us
-        let identifiersToRemove = Array(pendingNotificationRequestsByIdentifier.keys)
+        let identifiersToRemove = Array(mutablePendingNotificationRequestsByIdentifier.keys)
         
         // remove all pending requests that were scheduled by us
         UNUserNotificationCenter.current().removePendingNotificationRequests(withIdentifiers: identifiersToRemove)
@@ -122,9 +127,16 @@ fileprivate extension LocalNotificationCenter {
             
             // load only notification requests created by the LocalNotificationCenter class (based on existence of key in userInfo)
             for request in requests {
+                // do not load any notification requests outside our context
+                guard let context = request.content.userInfo[UserInfoKeys.notificationContext] as? String, context == strongSelf.context else {
+                    continue
+                }
+                
+                // get the notification requests identifier
                 guard let identifier = request.content.userInfo[UserInfoKeys.notificationIdentifier] as? String else {
                     continue
                 }
+                
                 strongSelf.mutablePendingNotificationRequestsByIdentifier[identifier] = request
             }
         }
