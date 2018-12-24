@@ -60,11 +60,13 @@ LocalNotificationCenter.default.scheduleLocalNotification(withIdentifier: identi
 ```
 
 ### Cancelling a Single Pending Local Notification
+You can cancel a previously scheduled notification via its unique identifier.
 ```
 LocalNotificationCenter.default.cancelScheduledLocalNotification(forIdentifier: identifier)
 ```
 
 ### Cancelling All Pending Local Notifications
+In some cases, you might want to cancel all previously scheduled notifications within the context.
 ```
 LocalNotificationCenter.default.cancelAllScheduledLocalNotifications()
 ```
