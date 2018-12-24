@@ -24,11 +24,50 @@ pod 'LocalNotificationCenter'
 
 LocalNotificationCenter is a lightweight wrapper around the UserNotifications
 framework, and can be used to easily schedule and manage local notifications on
-iOS. It also maintains its own context, and therefore manages only the local
-notifications scheduled by itself.
+iOS.
+
+### Notification Context
+Every instance of LocalNotificationCenter maintains its own context. The default notification center uses a default context, however it's possible to create instances with separate contexts.
+
+All actions performed in a LocalNotificationCenter instance pertain to its own context only.
+
+```
+/// Scoped to the default context.
+let defaultNotificationCenter = LocalNotificationCenter.default
 
 
+/// Scoped to a unique context.
+let uniqueNotificationCenter = LocalNotificationCenter(context: "my_unique_context")
+```
 
+
+### Scheduling a Local Notification
+```
+// create a unique identifier for this notification (i.e. some database id)
+let identifier = <Some Unique Identifier>
+
+// repeat monthly on the 24th day, at 8:30am
+let date = DateComponents()
+date.day = 24
+date.hour = 8
+date.minutes = 30
+
+// schedule a new one
+LocalNotificationCenter.default.scheduleLocalNotification(withIdentifier: identifier,
+                                                          body: message,
+                                                          dateMatching: date,
+                                                          repeats: true)
+```
+
+### Cancelling a Single Pending Local Notification
+```
+LocalNotificationCenter.default.cancelScheduledLocalNotification(forIdentifier: identifier)
+```
+
+### Cancelling All Pending Local Notifications
+```
+LocalNotificationCenter.default.cancelAllScheduledLocalNotifications()
+```
 
 ## Author
 
