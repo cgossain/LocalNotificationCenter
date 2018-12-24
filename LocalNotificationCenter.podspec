@@ -3,7 +3,7 @@ Pod::Spec.new do |s|
   s.version          = '0.2.0'
   s.summary          = 'A lightweight library for scheduling local notifications on iOS, written in Swift.'
   s.description      = <<-DESC
-A lightweight library for scheduling local notifications on iOS.
+  A lightweight library for scheduling local notifications on iOS, written in Swift.
                        DESC
   s.homepage         = 'https://github.com/cgossain/LocalNotificationCenter'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
