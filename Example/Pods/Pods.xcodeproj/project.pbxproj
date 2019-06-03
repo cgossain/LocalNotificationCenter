@@ -7,303 +7,281 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		395AB5EAAD276B6BB295C07ACFC36DBD /* LocalNotificationCenter-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EA26E572622DB09CF84D5AB101AD8626 /* LocalNotificationCenter-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5DAC79F501EED1E128B5C9AA18941F75 /* LocalNotificationCenter-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A92329CA9995889FC8AFE5F5D8391152 /* LocalNotificationCenter-dummy.m */; };
-		712F8403F1560874B125451D3DE53277 /* Pods-LocalNotificationCenter_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D0221D54386E3B4EA7F3AC22BF96F2CF /* Pods-LocalNotificationCenter_Tests-dummy.m */; };
-		92A27CD751E6D187CE65D2A369318B85 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 124AE78EBCAADF4365966C1EB4847DC7 /* Foundation.framework */; };
-		A41854AE7B5BCE4894FF5A21B812DDDC /* Pods-LocalNotificationCenter_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F1804832A5383A15C7945218AE7E31B8 /* Pods-LocalNotificationCenter_Example-dummy.m */; };
-		BEE2ECF7DBBA5CE752899BCFF7731369 /* Pods-LocalNotificationCenter_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A29F3B8CA9517D830DC9FA3C23D2C05 /* Pods-LocalNotificationCenter_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C514C521F1DF7F632B0617F4CD48E9B7 /* LocalNotificationCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37974D629E701C748AB9F4AE6A2967CD /* LocalNotificationCenter.swift */; };
-		C561655B4F6F966E54F740255D948030 /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC8E5FE6B646804478DE420C598583FA /* UserNotifications.framework */; };
-		E18DD9DA3A6681FB8FD10309D3EAC09D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 124AE78EBCAADF4365966C1EB4847DC7 /* Foundation.framework */; };
-		E7CB3F24D50EE1D35D2BCAFAC0B1B5D6 /* Pods-LocalNotificationCenter_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 36E390335C178D074E4137F3EFB6D9D6 /* Pods-LocalNotificationCenter_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F7944269B30CB82DC95212D3965B2383 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 124AE78EBCAADF4365966C1EB4847DC7 /* Foundation.framework */; };
+		0A3FA40729C81CC342D28B0AC3C7AB59 /* Pods-LocalNotificationCenter_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0184E618ABF49BF115BAD0D92E6083A4 /* Pods-LocalNotificationCenter_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		29ECA0C43C74748FED24BF0549AB23DA /* Pods-LocalNotificationCenter_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D9F413FFBC35D4BBD7E172BCCB98DB9C /* Pods-LocalNotificationCenter_Example-dummy.m */; };
+		5D2041E8108FAB195F15CB1F2782BB38 /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 511844A5DF028DDCF29F8AC40F76BBB6 /* UserNotifications.framework */; };
+		7BB67801C1CD8F1003E7F7C62904242E /* LocalNotificationCenter-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B657221DD4ACC1CA1A72B9B97AA60176 /* LocalNotificationCenter-dummy.m */; };
+		7CEA30AA4738693ACFBDAB9C087C7320 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 196F5BEFDD23FFC7CA2FFB301DFFD7DA /* Foundation.framework */; };
+		7F0FA9AB17B1C207926B38FCE8CE37ED /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 196F5BEFDD23FFC7CA2FFB301DFFD7DA /* Foundation.framework */; };
+		8A4A63E82A74816FF30DAA88AF802C53 /* Pods-LocalNotificationCenter_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 198E33B310BA29FB16CC75FC344DE43B /* Pods-LocalNotificationCenter_Tests-dummy.m */; };
+		CACDE191D7EBDC53890E524C507DD20D /* LocalNotificationCenter-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 500FC0CBE5068A6B3431BF2100EB46BC /* LocalNotificationCenter-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CFFCEB0D405B8BE97171FA71BAF8C49A /* Pods-LocalNotificationCenter_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FCF8FB3C887FBD39718FFD793DC07D1C /* Pods-LocalNotificationCenter_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D09C2740C253A2773CCFD7A7F9205076 /* LocalNotificationCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA9CBA2CA5910D1A371B170E571BF73A /* LocalNotificationCenter.swift */; };
+		F844450ABD5C8CB77324F69F86B99048 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 196F5BEFDD23FFC7CA2FFB301DFFD7DA /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		73A1D157E369F40FB0DF1B46617D1054 /* PBXContainerItemProxy */ = {
+		022B3D2BFDC3645BA68BAAFA3E19DB89 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = CF40C4BAE80B7CD2B80CA6314750B48C;
+			remoteGlobalIDString = 15303CCA41BD6C9EC16563E2FC6089AF;
 			remoteInfo = "Pods-LocalNotificationCenter_Example";
 		};
-		A459EF73F50E3569CBACA1A929851C1F /* PBXContainerItemProxy */ = {
+		96D19178C8159A3DF550C40639DE5311 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = F3613D15E2D5058F92CB0A0952E23FDC;
+			remoteGlobalIDString = 18B62B626BCC5BE4C53690A37DC3A2C7;
 			remoteInfo = LocalNotificationCenter;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0F3E30A2A54513E0568FE4F7132949B4 /* Pods-LocalNotificationCenter_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LocalNotificationCenter_Example-frameworks.sh"; sourceTree = "<group>"; };
-		124AE78EBCAADF4365966C1EB4847DC7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		22286119A62B06ED954D9959282D93AF /* Pods-LocalNotificationCenter_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-LocalNotificationCenter_Example.modulemap"; sourceTree = "<group>"; };
-		2AB9B4067AD195793FBA2CF521A7B512 /* LocalNotificationCenter.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LocalNotificationCenter.xcconfig; sourceTree = "<group>"; };
-		36E390335C178D074E4137F3EFB6D9D6 /* Pods-LocalNotificationCenter_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-LocalNotificationCenter_Tests-umbrella.h"; sourceTree = "<group>"; };
-		37974D629E701C748AB9F4AE6A2967CD /* LocalNotificationCenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LocalNotificationCenter.swift; path = LocalNotificationCenter/Classes/LocalNotificationCenter.swift; sourceTree = "<group>"; };
-		3E6A7B67B248EE855B4CE308B819047C /* Pods-LocalNotificationCenter_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LocalNotificationCenter_Example.release.xcconfig"; sourceTree = "<group>"; };
-		50CF7E0EE12E876D532AA56166767078 /* Pods-LocalNotificationCenter_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LocalNotificationCenter_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		5C45A0F0C15D8A79D746BC3A4242B572 /* Pods-LocalNotificationCenter_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LocalNotificationCenter_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		5D362B077403F0BEE8DBF68A9825EF9E /* LocalNotificationCenter.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = LocalNotificationCenter.modulemap; sourceTree = "<group>"; };
-		62C8F20988D7976F013C56B56AC33CC9 /* Pods_LocalNotificationCenter_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_LocalNotificationCenter_Tests.framework; path = "Pods-LocalNotificationCenter_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		650EBC44A4C4A7AB471FDBED0D638E08 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
-		65C9B500636A446CB04E4B937EF3E6C4 /* Pods-LocalNotificationCenter_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LocalNotificationCenter_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		6636B399514CDC1527AD63B30F0FC253 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6EDC06B7433B717B31CE9D40014317B8 /* Pods-LocalNotificationCenter_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LocalNotificationCenter_Tests-resources.sh"; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		99229D44503BE5A312591A36FD6A0846 /* Pods-LocalNotificationCenter_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LocalNotificationCenter_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		9A29F3B8CA9517D830DC9FA3C23D2C05 /* Pods-LocalNotificationCenter_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-LocalNotificationCenter_Example-umbrella.h"; sourceTree = "<group>"; };
-		9F03F7838E52BB3FCEE981201C1294C0 /* Pods_LocalNotificationCenter_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_LocalNotificationCenter_Example.framework; path = "Pods-LocalNotificationCenter_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		A63EA556253DCDD57AC3B4340D2869B4 /* Pods-LocalNotificationCenter_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-LocalNotificationCenter_Tests.modulemap"; sourceTree = "<group>"; };
-		A75E67073C2A03F3ECBDE69AB1A757C8 /* Pods-LocalNotificationCenter_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LocalNotificationCenter_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		A92329CA9995889FC8AFE5F5D8391152 /* LocalNotificationCenter-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "LocalNotificationCenter-dummy.m"; sourceTree = "<group>"; };
-		AA636D310D43D51BEE5E5AD20540A004 /* LocalNotificationCenter.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; path = LocalNotificationCenter.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		AAB811BA6A60C83DB4DE498077F27118 /* Pods-LocalNotificationCenter_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LocalNotificationCenter_Example-resources.sh"; sourceTree = "<group>"; };
-		B067FA18ADBE00322101886D7CDE6424 /* Pods-LocalNotificationCenter_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LocalNotificationCenter_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		C805A62690CFADA8EE517545B0977D9E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CF70158FA507AC6A9A819F55BBC760B0 /* Pods-LocalNotificationCenter_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LocalNotificationCenter_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		D0221D54386E3B4EA7F3AC22BF96F2CF /* Pods-LocalNotificationCenter_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LocalNotificationCenter_Tests-dummy.m"; sourceTree = "<group>"; };
-		D090BA5AF1FAE9C6EBE8C0CC97D193E5 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D222B5898D2C243607F9F56739546415 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
-		D27EE3574AD604E81A89B51EDF19EB9F /* Pods-LocalNotificationCenter_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LocalNotificationCenter_Tests-frameworks.sh"; sourceTree = "<group>"; };
-		D782FB89881A8CBED69CBA6B3A2CB53F /* LocalNotificationCenter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = LocalNotificationCenter.framework; path = LocalNotificationCenter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		EA26E572622DB09CF84D5AB101AD8626 /* LocalNotificationCenter-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LocalNotificationCenter-umbrella.h"; sourceTree = "<group>"; };
-		F1804832A5383A15C7945218AE7E31B8 /* Pods-LocalNotificationCenter_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LocalNotificationCenter_Example-dummy.m"; sourceTree = "<group>"; };
-		FC8E5FE6B646804478DE420C598583FA /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/UserNotifications.framework; sourceTree = DEVELOPER_DIR; };
-		FE6B64F09236B0B0BCDB0B29B36CA07C /* LocalNotificationCenter-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LocalNotificationCenter-prefix.pch"; sourceTree = "<group>"; };
+		0184E618ABF49BF115BAD0D92E6083A4 /* Pods-LocalNotificationCenter_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-LocalNotificationCenter_Example-umbrella.h"; sourceTree = "<group>"; };
+		1031F0BC706EC773A232F81384C1ABA3 /* Pods_LocalNotificationCenter_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_LocalNotificationCenter_Example.framework; path = "Pods-LocalNotificationCenter_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		113CB492F86913AB16CDBC80D23713AB /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		15AC562BD0C68B055FEE2638C1711E18 /* Pods-LocalNotificationCenter_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LocalNotificationCenter_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		196F5BEFDD23FFC7CA2FFB301DFFD7DA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		198E33B310BA29FB16CC75FC344DE43B /* Pods-LocalNotificationCenter_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LocalNotificationCenter_Tests-dummy.m"; sourceTree = "<group>"; };
+		20A97DC8DBFC39F306EE5A519DC1D3A6 /* Pods-LocalNotificationCenter_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-LocalNotificationCenter_Tests.modulemap"; sourceTree = "<group>"; };
+		24D69D92D50DC7048A089E1A135896D4 /* LocalNotificationCenter-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "LocalNotificationCenter-Info.plist"; sourceTree = "<group>"; };
+		2540D0B70AEAA58A577C7F73CE548929 /* Pods-LocalNotificationCenter_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LocalNotificationCenter_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		428C6134CF911D78999D65167C07AF7A /* Pods-LocalNotificationCenter_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LocalNotificationCenter_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		500FC0CBE5068A6B3431BF2100EB46BC /* LocalNotificationCenter-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LocalNotificationCenter-umbrella.h"; sourceTree = "<group>"; };
+		511844A5DF028DDCF29F8AC40F76BBB6 /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/UserNotifications.framework; sourceTree = DEVELOPER_DIR; };
+		5C3C4E2E36842DF62277E0E0F5172EB0 /* LocalNotificationCenter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = LocalNotificationCenter.framework; path = LocalNotificationCenter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		620F7854EDF2E60496487E40C44D7F3C /* LocalNotificationCenter-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LocalNotificationCenter-prefix.pch"; sourceTree = "<group>"; };
+		6DC754BE74227BD85A990BB5760F98D8 /* Pods_LocalNotificationCenter_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_LocalNotificationCenter_Tests.framework; path = "Pods-LocalNotificationCenter_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		880C1F9C257F106412FA7A0E7B9D1237 /* LocalNotificationCenter.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LocalNotificationCenter.xcconfig; sourceTree = "<group>"; };
+		91F39A0B0FF8E10D33442CA8A6ABB642 /* LocalNotificationCenter.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = LocalNotificationCenter.modulemap; sourceTree = "<group>"; };
+		97FD159D5D4E72692B987DEEB70055DF /* Pods-LocalNotificationCenter_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LocalNotificationCenter_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		AF9704DAE5F434DA6BE377B1B6BD6B2A /* Pods-LocalNotificationCenter_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-LocalNotificationCenter_Example.modulemap"; sourceTree = "<group>"; };
+		B095BC1F1EE948385C9A23FE5EE76AC4 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		B657221DD4ACC1CA1A72B9B97AA60176 /* LocalNotificationCenter-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "LocalNotificationCenter-dummy.m"; sourceTree = "<group>"; };
+		C412EDD0CF9D4A8032788AD5C2120C73 /* Pods-LocalNotificationCenter_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LocalNotificationCenter_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		C48DC6EA72B7F611F9F9F261747DD461 /* Pods-LocalNotificationCenter_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LocalNotificationCenter_Example.release.xcconfig"; sourceTree = "<group>"; };
+		CBF1B29C0C8656CCE3E5D44138C0B8C4 /* LocalNotificationCenter.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = LocalNotificationCenter.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		D8F56AB0C2AD937CA655C464F36C72CF /* Pods-LocalNotificationCenter_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LocalNotificationCenter_Example-frameworks.sh"; sourceTree = "<group>"; };
+		D9F413FFBC35D4BBD7E172BCCB98DB9C /* Pods-LocalNotificationCenter_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LocalNotificationCenter_Example-dummy.m"; sourceTree = "<group>"; };
+		E1175737420F2C0A87F4E83BC70CD0D9 /* Pods-LocalNotificationCenter_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LocalNotificationCenter_Tests-Info.plist"; sourceTree = "<group>"; };
+		EA9CBA2CA5910D1A371B170E571BF73A /* LocalNotificationCenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LocalNotificationCenter.swift; path = LocalNotificationCenter/Classes/LocalNotificationCenter.swift; sourceTree = "<group>"; };
+		EF625468B0EFCB57804476C9C1321621 /* Pods-LocalNotificationCenter_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LocalNotificationCenter_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		F4E2E26C0804966F23CB3ADCE9F41425 /* Pods-LocalNotificationCenter_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LocalNotificationCenter_Example-Info.plist"; sourceTree = "<group>"; };
+		F671B823DCC21C0337B04E61481EDE83 /* Pods-LocalNotificationCenter_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LocalNotificationCenter_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		FCF8FB3C887FBD39718FFD793DC07D1C /* Pods-LocalNotificationCenter_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-LocalNotificationCenter_Tests-umbrella.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		28924259D4AED61A58472D5F4951C717 /* Frameworks */ = {
+		10F231266C0298B236AF681549E12145 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F7944269B30CB82DC95212D3965B2383 /* Foundation.framework in Frameworks */,
-				C561655B4F6F966E54F740255D948030 /* UserNotifications.framework in Frameworks */,
+				F844450ABD5C8CB77324F69F86B99048 /* Foundation.framework in Frameworks */,
+				5D2041E8108FAB195F15CB1F2782BB38 /* UserNotifications.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6981D0B4817A0DA16939894BEB37107C /* Frameworks */ = {
+		BF0B3D6C602719DA6A6E095063FC8679 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E18DD9DA3A6681FB8FD10309D3EAC09D /* Foundation.framework in Frameworks */,
+				7F0FA9AB17B1C207926B38FCE8CE37ED /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		78F8BAD0A29D7F48C6127FF3F5AF04F6 /* Frameworks */ = {
+		F1BBF0EFEA346EA7E986753773AB5D57 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				92A27CD751E6D187CE65D2A369318B85 /* Foundation.framework in Frameworks */,
+				7CEA30AA4738693ACFBDAB9C087C7320 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1B25B5B1789F816993F91E96E52E5549 /* iOS */ = {
+		1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				124AE78EBCAADF4365966C1EB4847DC7 /* Foundation.framework */,
-				FC8E5FE6B646804478DE420C598583FA /* UserNotifications.framework */,
-			);
-			name = iOS;
-			sourceTree = "<group>";
-		};
-		1C6C7F23ED117BA0718F38C212903162 /* Pods-LocalNotificationCenter_Example */ = {
-			isa = PBXGroup;
-			children = (
-				C805A62690CFADA8EE517545B0977D9E /* Info.plist */,
-				22286119A62B06ED954D9959282D93AF /* Pods-LocalNotificationCenter_Example.modulemap */,
-				50CF7E0EE12E876D532AA56166767078 /* Pods-LocalNotificationCenter_Example-acknowledgements.markdown */,
-				A75E67073C2A03F3ECBDE69AB1A757C8 /* Pods-LocalNotificationCenter_Example-acknowledgements.plist */,
-				F1804832A5383A15C7945218AE7E31B8 /* Pods-LocalNotificationCenter_Example-dummy.m */,
-				0F3E30A2A54513E0568FE4F7132949B4 /* Pods-LocalNotificationCenter_Example-frameworks.sh */,
-				AAB811BA6A60C83DB4DE498077F27118 /* Pods-LocalNotificationCenter_Example-resources.sh */,
-				9A29F3B8CA9517D830DC9FA3C23D2C05 /* Pods-LocalNotificationCenter_Example-umbrella.h */,
-				B067FA18ADBE00322101886D7CDE6424 /* Pods-LocalNotificationCenter_Example.debug.xcconfig */,
-				3E6A7B67B248EE855B4CE308B819047C /* Pods-LocalNotificationCenter_Example.release.xcconfig */,
-			);
-			name = "Pods-LocalNotificationCenter_Example";
-			path = "Target Support Files/Pods-LocalNotificationCenter_Example";
-			sourceTree = "<group>";
-		};
-		302883B99D7F2E2670A44E94A0517FF7 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				6636B399514CDC1527AD63B30F0FC253 /* Info.plist */,
-				5D362B077403F0BEE8DBF68A9825EF9E /* LocalNotificationCenter.modulemap */,
-				2AB9B4067AD195793FBA2CF521A7B512 /* LocalNotificationCenter.xcconfig */,
-				A92329CA9995889FC8AFE5F5D8391152 /* LocalNotificationCenter-dummy.m */,
-				FE6B64F09236B0B0BCDB0B29B36CA07C /* LocalNotificationCenter-prefix.pch */,
-				EA26E572622DB09CF84D5AB101AD8626 /* LocalNotificationCenter-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/LocalNotificationCenter";
-			sourceTree = "<group>";
-		};
-		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				1B25B5B1789F816993F91E96E52E5549 /* iOS */,
+				E6A5A4AE6AEF919C3E6BC781C23E60BD /* iOS */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		5F69686E909A022ECD0A3618BBC40D9E /* LocalNotificationCenter */ = {
+		1C8E557004BEC9C64E4C6FA97AD0C998 /* Pods-LocalNotificationCenter_Tests */ = {
 			isa = PBXGroup;
 			children = (
-				37974D629E701C748AB9F4AE6A2967CD /* LocalNotificationCenter.swift */,
-				7A190B6D9135DD2EB2245ED2A8AA2851 /* Pod */,
-				302883B99D7F2E2670A44E94A0517FF7 /* Support Files */,
-			);
-			name = LocalNotificationCenter;
-			path = ../..;
-			sourceTree = "<group>";
-		};
-		7A190B6D9135DD2EB2245ED2A8AA2851 /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				D222B5898D2C243607F9F56739546415 /* LICENSE */,
-				AA636D310D43D51BEE5E5AD20540A004 /* LocalNotificationCenter.podspec */,
-				650EBC44A4C4A7AB471FDBED0D638E08 /* README.md */,
-			);
-			name = Pod;
-			sourceTree = "<group>";
-		};
-		7AC59E1371701EC8D1B07FDD2CB7E4E9 /* Pods-LocalNotificationCenter_Tests */ = {
-			isa = PBXGroup;
-			children = (
-				D090BA5AF1FAE9C6EBE8C0CC97D193E5 /* Info.plist */,
-				A63EA556253DCDD57AC3B4340D2869B4 /* Pods-LocalNotificationCenter_Tests.modulemap */,
-				CF70158FA507AC6A9A819F55BBC760B0 /* Pods-LocalNotificationCenter_Tests-acknowledgements.markdown */,
-				99229D44503BE5A312591A36FD6A0846 /* Pods-LocalNotificationCenter_Tests-acknowledgements.plist */,
-				D0221D54386E3B4EA7F3AC22BF96F2CF /* Pods-LocalNotificationCenter_Tests-dummy.m */,
-				D27EE3574AD604E81A89B51EDF19EB9F /* Pods-LocalNotificationCenter_Tests-frameworks.sh */,
-				6EDC06B7433B717B31CE9D40014317B8 /* Pods-LocalNotificationCenter_Tests-resources.sh */,
-				36E390335C178D074E4137F3EFB6D9D6 /* Pods-LocalNotificationCenter_Tests-umbrella.h */,
-				5C45A0F0C15D8A79D746BC3A4242B572 /* Pods-LocalNotificationCenter_Tests.debug.xcconfig */,
-				65C9B500636A446CB04E4B937EF3E6C4 /* Pods-LocalNotificationCenter_Tests.release.xcconfig */,
+				20A97DC8DBFC39F306EE5A519DC1D3A6 /* Pods-LocalNotificationCenter_Tests.modulemap */,
+				F671B823DCC21C0337B04E61481EDE83 /* Pods-LocalNotificationCenter_Tests-acknowledgements.markdown */,
+				2540D0B70AEAA58A577C7F73CE548929 /* Pods-LocalNotificationCenter_Tests-acknowledgements.plist */,
+				198E33B310BA29FB16CC75FC344DE43B /* Pods-LocalNotificationCenter_Tests-dummy.m */,
+				E1175737420F2C0A87F4E83BC70CD0D9 /* Pods-LocalNotificationCenter_Tests-Info.plist */,
+				FCF8FB3C887FBD39718FFD793DC07D1C /* Pods-LocalNotificationCenter_Tests-umbrella.h */,
+				428C6134CF911D78999D65167C07AF7A /* Pods-LocalNotificationCenter_Tests.debug.xcconfig */,
+				15AC562BD0C68B055FEE2638C1711E18 /* Pods-LocalNotificationCenter_Tests.release.xcconfig */,
 			);
 			name = "Pods-LocalNotificationCenter_Tests";
 			path = "Target Support Files/Pods-LocalNotificationCenter_Tests";
 			sourceTree = "<group>";
 		};
-		7DB346D0F39D3F0E887471402A8071AB = {
+		2EB1CE41DEC3683907C39F90E2ED76D5 /* LocalNotificationCenter */ = {
 			isa = PBXGroup;
 			children = (
-				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				8FBBA56B91EF28333758FDC2EF5AB67B /* Development Pods */,
-				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
-				CA32910A98DAA0402465BB7A4B7D0335 /* Products */,
-				F1D3D8B60427EF7E7EB09AC798DD4466 /* Targets Support Files */,
+				EA9CBA2CA5910D1A371B170E571BF73A /* LocalNotificationCenter.swift */,
+				65157806A00470CBFF1230648CBF5192 /* Pod */,
+				F39473C5179938CFE01A037C8B6A2285 /* Support Files */,
 			);
+			name = LocalNotificationCenter;
+			path = ../..;
 			sourceTree = "<group>";
 		};
-		8FBBA56B91EF28333758FDC2EF5AB67B /* Development Pods */ = {
+		46DC7A7FEC05E47BFB893383DBC718C0 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				5F69686E909A022ECD0A3618BBC40D9E /* LocalNotificationCenter */,
-			);
-			name = "Development Pods";
-			sourceTree = "<group>";
-		};
-		CA32910A98DAA0402465BB7A4B7D0335 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				D782FB89881A8CBED69CBA6B3A2CB53F /* LocalNotificationCenter.framework */,
-				9F03F7838E52BB3FCEE981201C1294C0 /* Pods_LocalNotificationCenter_Example.framework */,
-				62C8F20988D7976F013C56B56AC33CC9 /* Pods_LocalNotificationCenter_Tests.framework */,
+				5C3C4E2E36842DF62277E0E0F5172EB0 /* LocalNotificationCenter.framework */,
+				1031F0BC706EC773A232F81384C1ABA3 /* Pods_LocalNotificationCenter_Example.framework */,
+				6DC754BE74227BD85A990BB5760F98D8 /* Pods_LocalNotificationCenter_Tests.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		F1D3D8B60427EF7E7EB09AC798DD4466 /* Targets Support Files */ = {
+		5F674070D96F8329E2097071D2DABF6A /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				1C6C7F23ED117BA0718F38C212903162 /* Pods-LocalNotificationCenter_Example */,
-				7AC59E1371701EC8D1B07FDD2CB7E4E9 /* Pods-LocalNotificationCenter_Tests */,
+				904F46F6FCD2A3795DCFA3A8A8BB1F24 /* Pods-LocalNotificationCenter_Example */,
+				1C8E557004BEC9C64E4C6FA97AD0C998 /* Pods-LocalNotificationCenter_Tests */,
 			);
 			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		65157806A00470CBFF1230648CBF5192 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				B095BC1F1EE948385C9A23FE5EE76AC4 /* LICENSE */,
+				CBF1B29C0C8656CCE3E5D44138C0B8C4 /* LocalNotificationCenter.podspec */,
+				113CB492F86913AB16CDBC80D23713AB /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		904F46F6FCD2A3795DCFA3A8A8BB1F24 /* Pods-LocalNotificationCenter_Example */ = {
+			isa = PBXGroup;
+			children = (
+				AF9704DAE5F434DA6BE377B1B6BD6B2A /* Pods-LocalNotificationCenter_Example.modulemap */,
+				EF625468B0EFCB57804476C9C1321621 /* Pods-LocalNotificationCenter_Example-acknowledgements.markdown */,
+				C412EDD0CF9D4A8032788AD5C2120C73 /* Pods-LocalNotificationCenter_Example-acknowledgements.plist */,
+				D9F413FFBC35D4BBD7E172BCCB98DB9C /* Pods-LocalNotificationCenter_Example-dummy.m */,
+				D8F56AB0C2AD937CA655C464F36C72CF /* Pods-LocalNotificationCenter_Example-frameworks.sh */,
+				F4E2E26C0804966F23CB3ADCE9F41425 /* Pods-LocalNotificationCenter_Example-Info.plist */,
+				0184E618ABF49BF115BAD0D92E6083A4 /* Pods-LocalNotificationCenter_Example-umbrella.h */,
+				97FD159D5D4E72692B987DEEB70055DF /* Pods-LocalNotificationCenter_Example.debug.xcconfig */,
+				C48DC6EA72B7F611F9F9F261747DD461 /* Pods-LocalNotificationCenter_Example.release.xcconfig */,
+			);
+			name = "Pods-LocalNotificationCenter_Example";
+			path = "Target Support Files/Pods-LocalNotificationCenter_Example";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				FB075BF253D8F66BB637DB3EB7B31029 /* Development Pods */,
+				1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */,
+				46DC7A7FEC05E47BFB893383DBC718C0 /* Products */,
+				5F674070D96F8329E2097071D2DABF6A /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		E6A5A4AE6AEF919C3E6BC781C23E60BD /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				196F5BEFDD23FFC7CA2FFB301DFFD7DA /* Foundation.framework */,
+				511844A5DF028DDCF29F8AC40F76BBB6 /* UserNotifications.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		F39473C5179938CFE01A037C8B6A2285 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				91F39A0B0FF8E10D33442CA8A6ABB642 /* LocalNotificationCenter.modulemap */,
+				880C1F9C257F106412FA7A0E7B9D1237 /* LocalNotificationCenter.xcconfig */,
+				B657221DD4ACC1CA1A72B9B97AA60176 /* LocalNotificationCenter-dummy.m */,
+				24D69D92D50DC7048A089E1A135896D4 /* LocalNotificationCenter-Info.plist */,
+				620F7854EDF2E60496487E40C44D7F3C /* LocalNotificationCenter-prefix.pch */,
+				500FC0CBE5068A6B3431BF2100EB46BC /* LocalNotificationCenter-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/LocalNotificationCenter";
+			sourceTree = "<group>";
+		};
+		FB075BF253D8F66BB637DB3EB7B31029 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2EB1CE41DEC3683907C39F90E2ED76D5 /* LocalNotificationCenter */,
+			);
+			name = "Development Pods";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		387E9E3546F37464DC4C6CD80A419E16 /* Headers */ = {
+		5AC9C5C8C3F551000609879F889B38F4 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				395AB5EAAD276B6BB295C07ACFC36DBD /* LocalNotificationCenter-umbrella.h in Headers */,
+				CFFCEB0D405B8BE97171FA71BAF8C49A /* Pods-LocalNotificationCenter_Tests-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		3A4645806AAD3D07AE1BAEA5106BDAD7 /* Headers */ = {
+		9513632BB07911AEB8F9E27F25DF50FD /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BEE2ECF7DBBA5CE752899BCFF7731369 /* Pods-LocalNotificationCenter_Example-umbrella.h in Headers */,
+				0A3FA40729C81CC342D28B0AC3C7AB59 /* Pods-LocalNotificationCenter_Example-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D4E0558A11365D3FE411DC90F4F55420 /* Headers */ = {
+		A88BD324E3EDF23E73D591E16D509E1F /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E7CB3F24D50EE1D35D2BCAFAC0B1B5D6 /* Pods-LocalNotificationCenter_Tests-umbrella.h in Headers */,
+				CACDE191D7EBDC53890E524C507DD20D /* LocalNotificationCenter-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		14900A1A5293661D0B3260A792441864 /* Pods-LocalNotificationCenter_Tests */ = {
+		15303CCA41BD6C9EC16563E2FC6089AF /* Pods-LocalNotificationCenter_Example */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3242C386EAE3341F4A67B72F8FF3007F /* Build configuration list for PBXNativeTarget "Pods-LocalNotificationCenter_Tests" */;
+			buildConfigurationList = 30D90447F8325A4B6C7D6214222377D0 /* Build configuration list for PBXNativeTarget "Pods-LocalNotificationCenter_Example" */;
 			buildPhases = (
-				7691F461FBA86C025E9DA55C25D05FB9 /* Sources */,
-				6981D0B4817A0DA16939894BEB37107C /* Frameworks */,
-				D4E0558A11365D3FE411DC90F4F55420 /* Headers */,
+				9513632BB07911AEB8F9E27F25DF50FD /* Headers */,
+				1077C882BCE2D84F13E3F9ED650DA596 /* Sources */,
+				BF0B3D6C602719DA6A6E095063FC8679 /* Frameworks */,
+				E1BE2F0BA7E73FA55B5E3D2758F25EEF /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				6F9A8F01DB09CE99910B7E3FD521CD08 /* PBXTargetDependency */,
-			);
-			name = "Pods-LocalNotificationCenter_Tests";
-			productName = "Pods-LocalNotificationCenter_Tests";
-			productReference = 62C8F20988D7976F013C56B56AC33CC9 /* Pods_LocalNotificationCenter_Tests.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		CF40C4BAE80B7CD2B80CA6314750B48C /* Pods-LocalNotificationCenter_Example */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 1062F8DBDAC6F16F00F974C00BB2AB5F /* Build configuration list for PBXNativeTarget "Pods-LocalNotificationCenter_Example" */;
-			buildPhases = (
-				F6CD7C353EA82E09D8145075A16E309F /* Sources */,
-				78F8BAD0A29D7F48C6127FF3F5AF04F6 /* Frameworks */,
-				3A4645806AAD3D07AE1BAEA5106BDAD7 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				E572EDB32DC3D71C38250E17115722C9 /* PBXTargetDependency */,
+				82C7284A91D87E7C2B938186AFFA9793 /* PBXTargetDependency */,
 			);
 			name = "Pods-LocalNotificationCenter_Example";
 			productName = "Pods-LocalNotificationCenter_Example";
-			productReference = 9F03F7838E52BB3FCEE981201C1294C0 /* Pods_LocalNotificationCenter_Example.framework */;
+			productReference = 1031F0BC706EC773A232F81384C1ABA3 /* Pods_LocalNotificationCenter_Example.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		F3613D15E2D5058F92CB0A0952E23FDC /* LocalNotificationCenter */ = {
+		18B62B626BCC5BE4C53690A37DC3A2C7 /* LocalNotificationCenter */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9DF06E5C68452C5B769A552064F7B9E2 /* Build configuration list for PBXNativeTarget "LocalNotificationCenter" */;
+			buildConfigurationList = 33F4AC49266483B1A94387898B82B477 /* Build configuration list for PBXNativeTarget "LocalNotificationCenter" */;
 			buildPhases = (
-				412392577EACDEF4FC9483B4B10081CF /* Sources */,
-				28924259D4AED61A58472D5F4951C717 /* Frameworks */,
-				387E9E3546F37464DC4C6CD80A419E16 /* Headers */,
+				A88BD324E3EDF23E73D591E16D509E1F /* Headers */,
+				BDC4E5C7FD1740F3174EE8DF26F6EA20 /* Sources */,
+				10F231266C0298B236AF681549E12145 /* Frameworks */,
+				AF8728933A1C06C0CC9C4BF43E00BDAC /* Resources */,
 			);
 			buildRules = (
 			);
@@ -311,84 +289,127 @@
 			);
 			name = LocalNotificationCenter;
 			productName = LocalNotificationCenter;
-			productReference = D782FB89881A8CBED69CBA6B3A2CB53F /* LocalNotificationCenter.framework */;
+			productReference = 5C3C4E2E36842DF62277E0E0F5172EB0 /* LocalNotificationCenter.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		7336CD7312345FC5E7A4B843407C525E /* Pods-LocalNotificationCenter_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7E287F9FA55960C1DB61CBFC97314EEA /* Build configuration list for PBXNativeTarget "Pods-LocalNotificationCenter_Tests" */;
+			buildPhases = (
+				5AC9C5C8C3F551000609879F889B38F4 /* Headers */,
+				E20AC317739AB88C67F76B95222C81B2 /* Sources */,
+				F1BBF0EFEA346EA7E986753773AB5D57 /* Frameworks */,
+				68C8538C7C6F421D90732B1F5CCD96BC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8D7E726E73AF3BB054A7AD65F34A8AFF /* PBXTargetDependency */,
+			);
+			name = "Pods-LocalNotificationCenter_Tests";
+			productName = "Pods-LocalNotificationCenter_Tests";
+			productReference = 6DC754BE74227BD85A990BB5760F98D8 /* Pods_LocalNotificationCenter_Tests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0930;
 				LastUpgradeCheck = 0930;
 			};
-			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = CA32910A98DAA0402465BB7A4B7D0335 /* Products */;
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 46DC7A7FEC05E47BFB893383DBC718C0 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				F3613D15E2D5058F92CB0A0952E23FDC /* LocalNotificationCenter */,
-				CF40C4BAE80B7CD2B80CA6314750B48C /* Pods-LocalNotificationCenter_Example */,
-				14900A1A5293661D0B3260A792441864 /* Pods-LocalNotificationCenter_Tests */,
+				18B62B626BCC5BE4C53690A37DC3A2C7 /* LocalNotificationCenter */,
+				15303CCA41BD6C9EC16563E2FC6089AF /* Pods-LocalNotificationCenter_Example */,
+				7336CD7312345FC5E7A4B843407C525E /* Pods-LocalNotificationCenter_Tests */,
 			);
 		};
 /* End PBXProject section */
 
+/* Begin PBXResourcesBuildPhase section */
+		68C8538C7C6F421D90732B1F5CCD96BC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF8728933A1C06C0CC9C4BF43E00BDAC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E1BE2F0BA7E73FA55B5E3D2758F25EEF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
-		412392577EACDEF4FC9483B4B10081CF /* Sources */ = {
+		1077C882BCE2D84F13E3F9ED650DA596 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5DAC79F501EED1E128B5C9AA18941F75 /* LocalNotificationCenter-dummy.m in Sources */,
-				C514C521F1DF7F632B0617F4CD48E9B7 /* LocalNotificationCenter.swift in Sources */,
+				29ECA0C43C74748FED24BF0549AB23DA /* Pods-LocalNotificationCenter_Example-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7691F461FBA86C025E9DA55C25D05FB9 /* Sources */ = {
+		BDC4E5C7FD1740F3174EE8DF26F6EA20 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				712F8403F1560874B125451D3DE53277 /* Pods-LocalNotificationCenter_Tests-dummy.m in Sources */,
+				7BB67801C1CD8F1003E7F7C62904242E /* LocalNotificationCenter-dummy.m in Sources */,
+				D09C2740C253A2773CCFD7A7F9205076 /* LocalNotificationCenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F6CD7C353EA82E09D8145075A16E309F /* Sources */ = {
+		E20AC317739AB88C67F76B95222C81B2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A41854AE7B5BCE4894FF5A21B812DDDC /* Pods-LocalNotificationCenter_Example-dummy.m in Sources */,
+				8A4A63E82A74816FF30DAA88AF802C53 /* Pods-LocalNotificationCenter_Tests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		6F9A8F01DB09CE99910B7E3FD521CD08 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "Pods-LocalNotificationCenter_Example";
-			target = CF40C4BAE80B7CD2B80CA6314750B48C /* Pods-LocalNotificationCenter_Example */;
-			targetProxy = 73A1D157E369F40FB0DF1B46617D1054 /* PBXContainerItemProxy */;
-		};
-		E572EDB32DC3D71C38250E17115722C9 /* PBXTargetDependency */ = {
+		82C7284A91D87E7C2B938186AFFA9793 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = LocalNotificationCenter;
-			target = F3613D15E2D5058F92CB0A0952E23FDC /* LocalNotificationCenter */;
-			targetProxy = A459EF73F50E3569CBACA1A929851C1F /* PBXContainerItemProxy */;
+			target = 18B62B626BCC5BE4C53690A37DC3A2C7 /* LocalNotificationCenter */;
+			targetProxy = 96D19178C8159A3DF550C40639DE5311 /* PBXContainerItemProxy */;
+		};
+		8D7E726E73AF3BB054A7AD65F34A8AFF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-LocalNotificationCenter_Example";
+			target = 15303CCA41BD6C9EC16563E2FC6089AF /* Pods-LocalNotificationCenter_Example */;
+			targetProxy = 022B3D2BFDC3645BA68BAAFA3E19DB89 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		618DC8CE3EE0A17CB55DE58C8D780CDC /* Release */ = {
+		08CBA04B11BA2DCFBDFB95ACF11F57A5 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 65C9B500636A446CB04E4B937EF3E6C4 /* Pods-LocalNotificationCenter_Tests.release.xcconfig */;
+			baseConfigurationReference = 97FD159D5D4E72692B987DEEB70055DF /* Pods-LocalNotificationCenter_Example.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -401,109 +422,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-LocalNotificationCenter_Tests/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-LocalNotificationCenter_Tests/Pods-LocalNotificationCenter_Tests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		61EB1A9F601C06D6DAF4E78EE778C140 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2AB9B4067AD195793FBA2CF521A7B512 /* LocalNotificationCenter.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/LocalNotificationCenter/LocalNotificationCenter-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/LocalNotificationCenter/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/LocalNotificationCenter/LocalNotificationCenter.modulemap";
-				PRODUCT_MODULE_NAME = LocalNotificationCenter;
-				PRODUCT_NAME = LocalNotificationCenter;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		72F6973EBACB95E08E42CDEB3E63007E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5C45A0F0C15D8A79D746BC3A4242B572 /* Pods-LocalNotificationCenter_Tests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-LocalNotificationCenter_Tests/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-LocalNotificationCenter_Tests/Pods-LocalNotificationCenter_Tests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		854CBC4FC9C82D3FFFEA1394BEE05AE8 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = B067FA18ADBE00322101886D7CDE6424 /* Pods-LocalNotificationCenter_Example.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-LocalNotificationCenter_Example/Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-LocalNotificationCenter_Example/Pods-LocalNotificationCenter_Example-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -516,15 +435,13 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
-		CE6BB864FB202B78BB66ACCAACAA0513 /* Release */ = {
+		16FD0648F06E4A022961C9516E16703A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -556,8 +473,6 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGNING_ALLOWED = NO;
-				CODE_SIGNING_REQUIRED = NO;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
@@ -576,13 +491,17 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 4.2;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Release;
 		};
-		CF76A09C3B09DA1B0DB6FD5DB2C3A2A2 /* Debug */ = {
+		2DB13D3FAE987D20610ACD677A28C6E8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -614,8 +533,6 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGNING_ALLOWED = NO;
-				CODE_SIGNING_REQUIRED = NO;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -636,18 +553,21 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
-				MTL_ENABLE_DEBUG_INFO = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Debug;
 		};
-		D36AA8DFC1DC3CCFAFA8ECCC73E24940 /* Release */ = {
+		5A5945396C4CCCE8A0B005937FE48F3D /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2AB9B4067AD195793FBA2CF521A7B512 /* LocalNotificationCenter.xcconfig */;
+			baseConfigurationReference = 880C1F9C257F106412FA7A0E7B9D1237 /* LocalNotificationCenter.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
@@ -660,7 +580,7 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				GCC_PREFIX_HEADER = "Target Support Files/LocalNotificationCenter/LocalNotificationCenter-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/LocalNotificationCenter/Info.plist";
+				INFOPLIST_FILE = "Target Support Files/LocalNotificationCenter/LocalNotificationCenter-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -670,8 +590,7 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -679,9 +598,9 @@
 			};
 			name = Release;
 		};
-		D69844B78C8E71552F4AB326C44E13A9 /* Release */ = {
+		682B348366031B9A15CAA15CFF96C294 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3E6A7B67B248EE855B4CE308B819047C /* Pods-LocalNotificationCenter_Example.release.xcconfig */;
+			baseConfigurationReference = C48DC6EA72B7F611F9F9F261747DD461 /* Pods-LocalNotificationCenter_Example.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -694,7 +613,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-LocalNotificationCenter_Example/Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-LocalNotificationCenter_Example/Pods-LocalNotificationCenter_Example-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -707,7 +626,107 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		6AB8A3ACE720BB3B5CBA7623085B1EC8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 880C1F9C257F106412FA7A0E7B9D1237 /* LocalNotificationCenter.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/LocalNotificationCenter/LocalNotificationCenter-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/LocalNotificationCenter/LocalNotificationCenter-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/LocalNotificationCenter/LocalNotificationCenter.modulemap";
+				PRODUCT_MODULE_NAME = LocalNotificationCenter;
+				PRODUCT_NAME = LocalNotificationCenter;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		7AE737CC1A0C8F0101C7CA8848B43FFC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 428C6134CF911D78999D65167C07AF7A /* Pods-LocalNotificationCenter_Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-LocalNotificationCenter_Tests/Pods-LocalNotificationCenter_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-LocalNotificationCenter_Tests/Pods-LocalNotificationCenter_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D38A308FC996B2AFA5F39C25E357E0A4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 15AC562BD0C68B055FEE2638C1711E18 /* Pods-LocalNotificationCenter_Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-LocalNotificationCenter_Tests/Pods-LocalNotificationCenter_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-LocalNotificationCenter_Tests/Pods-LocalNotificationCenter_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -718,43 +737,43 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1062F8DBDAC6F16F00F974C00BB2AB5F /* Build configuration list for PBXNativeTarget "Pods-LocalNotificationCenter_Example" */ = {
+		30D90447F8325A4B6C7D6214222377D0 /* Build configuration list for PBXNativeTarget "Pods-LocalNotificationCenter_Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				854CBC4FC9C82D3FFFEA1394BEE05AE8 /* Debug */,
-				D69844B78C8E71552F4AB326C44E13A9 /* Release */,
+				08CBA04B11BA2DCFBDFB95ACF11F57A5 /* Debug */,
+				682B348366031B9A15CAA15CFF96C294 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+		33F4AC49266483B1A94387898B82B477 /* Build configuration list for PBXNativeTarget "LocalNotificationCenter" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				CF76A09C3B09DA1B0DB6FD5DB2C3A2A2 /* Debug */,
-				CE6BB864FB202B78BB66ACCAACAA0513 /* Release */,
+				6AB8A3ACE720BB3B5CBA7623085B1EC8 /* Debug */,
+				5A5945396C4CCCE8A0B005937FE48F3D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3242C386EAE3341F4A67B72F8FF3007F /* Build configuration list for PBXNativeTarget "Pods-LocalNotificationCenter_Tests" */ = {
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				72F6973EBACB95E08E42CDEB3E63007E /* Debug */,
-				618DC8CE3EE0A17CB55DE58C8D780CDC /* Release */,
+				2DB13D3FAE987D20610ACD677A28C6E8 /* Debug */,
+				16FD0648F06E4A022961C9516E16703A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9DF06E5C68452C5B769A552064F7B9E2 /* Build configuration list for PBXNativeTarget "LocalNotificationCenter" */ = {
+		7E287F9FA55960C1DB61CBFC97314EEA /* Build configuration list for PBXNativeTarget "Pods-LocalNotificationCenter_Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				61EB1A9F601C06D6DAF4E78EE778C140 /* Debug */,
-				D36AA8DFC1DC3CCFAFA8ECCC73E24940 /* Release */,
+				7AE737CC1A0C8F0101C7CA8848B43FFC /* Debug */,
+				D38A308FC996B2AFA5F39C25E357E0A4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 }

@@ -1,8 +1,8 @@
 {
   "name": "LocalNotificationCenter",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "summary": "A lightweight library for scheduling local notifications on iOS, written in Swift.",
-  "description": "A lightweight library for scheduling local notifications on iOS, written in Swift.",
+  "description": "The LocalNotificationCenter was writted to enable a very simple and efficient way to manage local\nnotifications on iOS. It offers a very simple interface, and the powerful concept of context based\nnotification centers.",
   "homepage": "https://github.com/cgossain/LocalNotificationCenter",
   "license": {
     "type": "MIT",
@@ -13,12 +13,12 @@
   },
   "source": {
     "git": "https://github.com/cgossain/LocalNotificationCenter.git",
-    "tag": "0.2.0"
+    "tag": "0.3.0"
   },
-  "swift_version": "4.2",
   "platforms": {
     "ios": "10.3"
   },
+  "swift_version": "5.0",
   "source_files": "LocalNotificationCenter/Classes/**/*",
   "frameworks": "UserNotifications"
 }

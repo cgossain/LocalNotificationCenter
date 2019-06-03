@@ -1,5 +1,5 @@
 PODS:
-  - LocalNotificationCenter (0.2.0)
+  - LocalNotificationCenter (0.3.0)
 
 DEPENDENCIES:
   - LocalNotificationCenter (from `../`)
@@ -9,8 +9,8 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  LocalNotificationCenter: d9585c5e9696e3ad1a9c08a55abd4f394f55a8b0
+  LocalNotificationCenter: df84a241a0f65d6937dbc1f09e096f8443645d3d
 
 PODFILE CHECKSUM: 7afc3f4ce92446aef60d99b67063d07c0c82fa19
 
-COCOAPODS: 1.5.3
+COCOAPODS: 1.6.0
