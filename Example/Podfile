@@ -7,6 +7,6 @@ target 'LocalNotificationCenter_Example' do
   target 'LocalNotificationCenter_Tests' do
     inherit! :search_paths
 
-    
+
   end
 end
