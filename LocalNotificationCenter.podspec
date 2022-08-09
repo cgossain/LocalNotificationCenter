@@ -1,9 +1,9 @@
 Pod::Spec.new do |s|
   s.name            = 'LocalNotificationCenter'
-  s.version         = '0.3.0'
+  s.version         = '0.4.0'
   s.summary         = 'A lightweight library for scheduling local notifications on iOS, written in Swift.'
   s.description     = <<-DESC
-  The LocalNotificationCenter was writted to enable a very simple and efficient way to manage local
+  LocalNotificationCenter was writted to enable a very simple and efficient way to manage local
   notifications on iOS. It offers a very simple interface, and the powerful concept of context based
   notification centers.
                        DESC
