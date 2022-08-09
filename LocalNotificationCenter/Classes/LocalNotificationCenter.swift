@@ -78,8 +78,7 @@ public class LocalNotificationCenter {
         var notificationContentUserInfo: [AnyHashable : Any] = [LocalNotificationCenter.UserInfoKeys.notificationContext : self.context,
                                                                 LocalNotificationCenter.UserInfoKeys.notificationIdentifier : identifier]
         
-        // append any additional externally provided user info
-        userInfo?.forEach({ notificationContentUserInfo[$0.key] = $0.value })
+        mergedUserInfo.merge(userInfo ?? [:]) {  (current, _) in return current }
         
         // create the local notification content
         let content = UNMutableNotificationContent()
