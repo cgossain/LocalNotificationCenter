@@ -25,7 +25,7 @@
 import Foundation
 import UserNotifications
 
-/// An object for managing local notifications for your app.
+/// An object for managing the local notifications for your app or app extension within a given namespace.
 public class LocalNotificationCenter {
     
     /// The default notification center instance.
