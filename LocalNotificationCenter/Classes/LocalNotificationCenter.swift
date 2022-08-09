@@ -25,146 +25,126 @@
 import Foundation
 import UserNotifications
 
+/// An object for managing local notifications for your app.
 public class LocalNotificationCenter {
-    private struct UserInfoKeys {
-        static let notificationContext = "com.localnotificationcenter.userinfokeys.context"
-        static let notificationIdentifier = "com.localnotificationcenter.userinfokeys.identifier"
-    }
     
     /// The default notification center instance.
     public static let `default` = LocalNotificationCenter(context: "com.localnotificationcenter.context.default")
     
-    /// The context of the receiver.
+    /// The context.
     public let context: String
     
     /// A list of all notification requests (managed by the receiver) that are scheduled and waiting to be delivered.
-    public var pendingNotificationRequestsByIdentifier: [String : UNNotificationRequest] {
-        return mutablePendingNotificationRequestsByIdentifier
-    }
-    
-    /// A mutable list of all notification requests (managed by the receiver) that are scheduled and waiting to be delivered.
-    fileprivate var mutablePendingNotificationRequestsByIdentifier: [String : UNNotificationRequest] = [:]
+    public private(set) var pendingNotificationRequestsByIdentifier: [String : UNNotificationRequest] = [:]
     
     
     // MARK: - Lifecycle
-    /// Initializes the notification center with the given context.
+    
+    /// Creates and returns a new instance of the local notification center.
     ///
-    /// - parameters:
-    ///     - context: A unique context for the notification center. The notification ceneter is limited to manage notifications within this context only.
+    /// - Parameters:
+    ///     - context: A unique context for the notification center. Notifications scheduled by the receiver are scoped to this given context only.
     init(context: String) {
         self.context = context
         loadScheduledLocalNotifications()
     }
     
-    /// Schedules a local notification with the given parameters.
+    /// Schedules a local notification associated with the receivers context using the given parameters.
     ///
-    /// - parameters:
+    /// - Parameters:
     ///     - identifier: The unique identifier for this notification.
-    ///     - body: The body of the notification alert.
-    ///     - dateMatching: The date components for which to fire the notification on.
-    ///     - repeats: A Boolean value indicating whether the system reschedules the notification after it is delivered.
+    ///     - body: The localized message to display in the notification alert.
+    ///     - dateMatching: The temporal information to use when constructing the trigger. Provide only the date components that are relevant for your trigger.
+    ///     - repeats: Specify false to deliver the notification one time. Specify true to reschedule the notification request each time the system delivers the notification.
     ///     - userInfo: A dictionary of custom information associated with the notification.
     public func scheduleLocalNotification(withIdentifier identifier: String,
                                           body: String,
                                           dateMatching dateComponents: DateComponents,
                                           repeats: Bool,
-                                          userInfo: [String : AnyObject]? = nil) {
-        // ignore if the notification is already scheduled
-        if isLocalNotificationScheduled(forIdentifier: identifier) {
+                                          userInfo: [AnyHashable : Any]? = nil) {
+        guard !isLocalNotificationScheduled(forIdentifier: identifier) else {
             return
         }
         
-        // create the base user info
-        var notificationContentUserInfo: [AnyHashable : Any] = [LocalNotificationCenter.UserInfoKeys.notificationContext : self.context,
-                                                                LocalNotificationCenter.UserInfoKeys.notificationIdentifier : identifier]
+        var mergedUserInfo: [AnyHashable : Any] = [
+            LocalNotificationCenter.UserInfoKeys.notificationContext : self.context,
+            LocalNotificationCenter.UserInfoKeys.notificationIdentifier : identifier
+        ]
         
         mergedUserInfo.merge(userInfo ?? [:]) {  (current, _) in return current }
         
-        // create the local notification content
         let content = UNMutableNotificationContent()
         content.body = body
-        content.userInfo = notificationContentUserInfo
+        content.userInfo = mergedUserInfo
         
-        // create the notification trigger
         let trigger = UNCalendarNotificationTrigger(dateMatching: dateComponents, repeats: repeats)
         
-        // create a notification request
         let request = UNNotificationRequest(identifier: identifier, content: content, trigger: trigger)
         
-        // add the notification request
         UNUserNotificationCenter.current().add(request) { [weak self] (error) in
             guard let strongSelf = self else {
                 return
             }
             
             if error == nil {
-                // track the scheduled notification request
-                strongSelf.mutablePendingNotificationRequestsByIdentifier[identifier] = request
+                strongSelf.pendingNotificationRequestsByIdentifier[identifier] = request
             }
         }
     }
     
     /// Returns a Boolean that indicates if there is a local notification scheduled in the receivers context for the given identifier.
     ///
-    /// - parameters:
+    /// - Parameters:
     ///     - identifier: The unique identifier a previously scheduled notification.
     public func isLocalNotificationScheduled(forIdentifier identifier: String) -> Bool {
-        return mutablePendingNotificationRequestsByIdentifier[identifier] != nil
+        return pendingNotificationRequestsByIdentifier[identifier] != nil
     }
     
     /// Cancels the local notification associated with the given identifer in the receivers context.
     ///
-    /// - Note: If there is no notification associated with the given identifier, the method does nothing.
-    /// - parameters:
+    /// - Parameters:
     ///     - identifier: The unique identifier a previously scheduled notification.
+    /// - Note: If there is no notification associated with the given identifier, the method does nothing.
     public func cancelScheduledLocalNotification(forIdentifier identifier: String) {
-        // ignore if we did not schedule a notification for this identifier
-        if !isLocalNotificationScheduled(forIdentifier: identifier) {
+        guard isLocalNotificationScheduled(forIdentifier: identifier) else {
             return
         }
-        
-        // remove a pending request for the given identifer from the notification center
         UNUserNotificationCenter.current().removePendingNotificationRequests(withIdentifiers: [identifier])
-        
-        // untrack a pending request for the given identifer
-        mutablePendingNotificationRequestsByIdentifier[identifier] = nil
+        pendingNotificationRequestsByIdentifier[identifier] = nil
     }
     
-    /// Cancels all scheduled local notificationsin the receivers context.
+    /// Cancels all scheduled local notifications associated with the receivers context.
     public func cancelAllScheduledLocalNotifications() {
-        // gather all identifiers scheduled by us
-        let identifiersToRemove = Array(mutablePendingNotificationRequestsByIdentifier.keys)
-        
-        // remove all pending requests that were scheduled by us
-        UNUserNotificationCenter.current().removePendingNotificationRequests(withIdentifiers: identifiersToRemove)
-        
-        // untrack all pending requests
-        mutablePendingNotificationRequestsByIdentifier.removeAll()
+        let identifiers = Array(pendingNotificationRequestsByIdentifier.keys)
+        UNUserNotificationCenter.current().removePendingNotificationRequests(withIdentifiers: identifiers)
+        pendingNotificationRequestsByIdentifier.removeAll()
     }
-    
 }
 
-fileprivate extension LocalNotificationCenter {
-    func loadScheduledLocalNotifications() {
-        UNUserNotificationCenter.current().getPendingNotificationRequests { [weak self] (requests) in
-            guard let strongSelf = self else {
-                return
-            }
-            
-            // load only notification requests created by the LocalNotificationCenter class (based on existence of key in userInfo)
-            for request in requests {
-                // do not load any notification requests outside our context
-                guard let context = request.content.userInfo[UserInfoKeys.notificationContext] as? String, context == strongSelf.context else {
-                    continue
+extension LocalNotificationCenter {
+    private struct UserInfoKeys {
+        static let notificationContext = "com.localnotificationcenter.userinfokeys.context"
+        static let notificationIdentifier = "com.localnotificationcenter.userinfokeys.identifier"
+    }
+    
+    private func loadScheduledLocalNotifications() {
+        UNUserNotificationCenter.current()
+            .getPendingNotificationRequests { [weak self] requests in
+                guard let strongSelf = self else {
+                    return
                 }
                 
-                // get the notification requests identifier
-                guard let identifier = request.content.userInfo[UserInfoKeys.notificationIdentifier] as? String else {
-                    continue
+                for request in requests {
+                    guard let context = request.content.userInfo[UserInfoKeys.notificationContext] as? String, context == strongSelf.context else {
+                        continue
+                    }
+                    
+                    guard let identifier = request.content.userInfo[UserInfoKeys.notificationIdentifier] as? String else {
+                        continue
+                    }
+                    
+                    strongSelf.pendingNotificationRequestsByIdentifier[identifier] = request
                 }
-                
-                strongSelf.mutablePendingNotificationRequestsByIdentifier[identifier] = request
             }
-        }
     }
 }
